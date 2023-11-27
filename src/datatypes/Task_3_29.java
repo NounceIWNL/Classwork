@@ -18,6 +18,23 @@ public class Task_3_29 {
         System.out.println(b3);
         boolean b4 = (x == 0) && (y == 0);
 
+        System.out.println("Hello\u0020world");
+        double a = 1.0;
+        if (a%1==0)
+            System.out.println("не является дробным");
+        else System.out.println("является дробным");
+
+        if (a==Math.round(a))
+            System.out.println("не является дробным");
+        else System.out.println("является дробным");
+
+        int seconds = 4000;
+        int days = seconds/(24*60*60);
+        int hours = seconds%(24*60*60)/(60*60);
+        int minutes = seconds%(24*60*60)%(60*60)/60;
+        int seconds2 = seconds%(24*60*60)%(60*60)%60;
+        System.out.println(days+" "+hours+ " "+minutes+" "+seconds2);
+
 
 
     }
