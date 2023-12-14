@@ -1,23 +1,36 @@
 
 public class Task11_9 {
-    private static final int SIZE = 5;
-    static int[] arr = new int[SIZE];
-
-
 
     public static void main(String[] args) {
-        fillArithmetic(1, 2);
-        print();
+        print(fillArithm(1,2,10));
+
+        int[] arr = fillGeom(1, 2, 20);
+        print(arr);
     }
 
-
-    static void fillArithmetic(int a, int p) {
-        for (int i = 0; i < SIZE; i++)
-            arr[i] = a + p * i;
+    //Код метода должен быть неизменным, код класса
+    static int[] fillArithm(int a, int p, int size) {
+        int[] arr = new int[size];
+        int x = a;
+        for (int i = 0; i < size; i++) {
+            arr[i] = x;
+            x += p;
+        }
+        return arr;
     }
 
-    static void print() {
-        for (int i = 0; i < SIZE; i++)
+    static int[] fillGeom(int a, int p, int size) {
+        int[] arr = new int[size];
+        int x = a;
+        for (int i = 0; i < size; i++) {
+            arr[i] = x;
+            x *= p;
+        }
+        return arr;
+    }
+
+    static void print(int[] arr) {
+        for (int i = 0; i < arr.length; i++)
             System.out.print(arr[i] + " ");
         System.out.println();
     }
