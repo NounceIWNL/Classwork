@@ -1,4 +1,4 @@
-package Cycles;
+package Arrays;
 
 public class Array26 {
     public static void main(String[] args) {
@@ -16,7 +16,6 @@ public class Array26 {
                 break;
             }
             previous = current;
-
         }
         System.out.println(index);
     }
