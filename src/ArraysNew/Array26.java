@@ -1,4 +1,4 @@
-package Arrays;
+package ArraysNew;
 
 public class Array26 {
     public static void main(String[] args) {
